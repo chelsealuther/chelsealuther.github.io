@@ -96,6 +96,34 @@ h3 { margin: 0; font-size: clamp(2.25rem, 4.15vw, 4.2rem); line-height: 1; }
 .coaching-grid { display: grid; grid-template-columns: 1fr .82fr; gap: 125px; align-items: center; }
 .coaching-copy .display-copy { margin-bottom: 40px; }
 .coaching-copy > p:not(.display-copy) { color: var(--muted); }
+
+.client-film { display: grid; grid-template-columns: .82fr 1.18fr; gap: 110px; align-items: center; margin: 150px 0 165px; padding: 105px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.client-film-copy h3 { max-width: 560px; }
+.client-film-copy > p:last-child { max-width: 470px; margin: 34px 0 0; color: var(--muted); font-size: 1.04rem; }
+.phone-film { justify-self: center; display: flex; flex-direction: column; align-items: center; gap: 28px; padding: 0; color: inherit; background: none; border: 0; cursor: pointer; }
+.phone-shell { position: relative; display: block; width: min(320px, 58vw); aspect-ratio: 9 / 18.9; padding: 9px; background: #171918; border: 1px solid rgba(255,255,255,.24); border-radius: 48px; box-shadow: 0 38px 70px rgba(41,48,46,.18), 0 12px 24px rgba(41,48,46,.12); transform: rotate(1.5deg); transition: transform .45s cubic-bezier(.22,1,.36,1), box-shadow .45s ease; }
+.phone-shell::before, .phone-shell::after { content: ""; position: absolute; left: -3px; width: 3px; background: #292c2a; border-radius: 3px 0 0 3px; }
+.phone-shell::before { top: 105px; height: 58px; }
+.phone-shell::after { top: 178px; height: 82px; }
+.phone-screen { position: relative; display: block; width: 100%; height: 100%; overflow: hidden; background: #c9c1b5; border-radius: 40px; }
+.phone-screen img { width: 100%; height: 100%; object-fit: cover; object-position: center; transition: transform .8s cubic-bezier(.22,1,.36,1); }
+.phone-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(18,20,19,.05), rgba(18,20,19,.27)); }
+.phone-island { position: absolute; top: 14px; left: 50%; width: 88px; height: 25px; transform: translateX(-50%); background: #090a09; border-radius: 99px; }
+.play-mark { position: absolute; top: 50%; left: 50%; display: grid; place-items: center; width: 78px; height: 78px; transform: translate(-50%, -50%); background: rgba(250,247,240,.9); border: 1px solid rgba(255,255,255,.65); border-radius: 50%; box-shadow: 0 10px 30px rgba(20,23,22,.18); backdrop-filter: blur(10px); transition: transform .3s ease, background .3s ease; }
+.play-mark span { width: 0; height: 0; margin-left: 5px; border-top: 9px solid transparent; border-bottom: 9px solid transparent; border-left: 14px solid var(--ink); }
+.film-caption { display: inline-flex; align-items: center; gap: 12px; padding-bottom: 5px; font-size: .76rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; border-bottom: 1px solid var(--ink); }
+.phone-film:hover .phone-shell { transform: rotate(0deg) translateY(-8px); box-shadow: 0 48px 85px rgba(41,48,46,.22), 0 15px 28px rgba(41,48,46,.12); }
+.phone-film:hover .phone-screen img { transform: scale(1.035); }
+.phone-film:hover .play-mark { transform: translate(-50%, -50%) scale(1.07); background: var(--cream); }
+.video-modal { position: fixed; inset: 0; z-index: 200; display: grid; place-items: center; padding: 70px 24px 28px; visibility: hidden; opacity: 0; background: rgba(20,23,22,.92); backdrop-filter: blur(16px); transition: opacity .3s ease, visibility .3s ease; }
+.video-modal.open { visibility: visible; opacity: 1; }
+.video-modal-inner { width: min(420px, 88vw); max-height: calc(100svh - 110px); }
+.video-modal video { display: block; width: 100%; max-height: calc(100svh - 110px); background: #111; border-radius: 28px; box-shadow: 0 30px 90px rgba(0,0,0,.45); }
+.video-modal-close { position: absolute; top: 24px; right: 28px; display: flex; align-items: center; gap: 9px; padding: 8px 0; color: var(--cream); background: none; border: 0; font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; cursor: pointer; }
+.video-modal-close span { font-size: 1.6rem; line-height: 1; }
+.video-fallback { margin: 18px 0 0; color: rgba(251,248,241,.72); text-align: center; font-size: .84rem; }
+body.modal-open { overflow: hidden; }
+
 .pull-quote { max-width: 1080px; margin: 150px auto 70px; text-align: center; }
 .pull-quote blockquote { margin: 0; font-size: clamp(2.8rem, 5.5vw, 5.8rem); line-height: 1.02; }
 
@@ -135,7 +163,7 @@ h3 { margin: 0; font-size: clamp(2.25rem, 4.15vw, 4.2rem); line-height: 1; }
   .hero-bottom .text-link { margin-top: 38px; }
   .opening-image { height: 72svh; }
   .opening-image img { object-position: center 54%; }
-  .section-intro, .chapter-lead, .testimonial-heading, .coaching-grid, .approach, .contact-bottom { grid-template-columns: 1fr; gap: 48px; }
+  .section-intro, .chapter-lead, .testimonial-heading, .coaching-grid, .client-film, .approach, .contact-bottom { grid-template-columns: 1fr; gap: 48px; }
   .paths { grid-template-columns: 1fr; }
   .path { min-height: 430px; padding: 44px 0; }
   .path + .path { padding-left: 0; border-left: 0; border-top: 1px solid var(--line); }
@@ -150,6 +178,9 @@ h3 { margin: 0; font-size: clamp(2.25rem, 4.15vw, 4.2rem); line-height: 1; }
   .focus-list div:first-child { padding-left: 24px; }
   .quotes figure { grid-template-columns: 1fr; gap: 20px; }
   .coaching-grid .editorial-image { order: -1; }
+  .client-film { margin: 110px 0 120px; padding: 85px 0; }
+  .client-film-copy { text-align: center; }
+  .client-film-copy h3, .client-film-copy > p:last-child { margin-left: auto; margin-right: auto; }
   .pull-quote { margin-top: 110px; }
   .approach-title { position: static; }
   .contact-bottom a { justify-self: start; }
@@ -166,5 +197,9 @@ h3 { margin: 0; font-size: clamp(2.25rem, 4.15vw, 4.2rem); line-height: 1; }
   .focus-list div, .focus-list div:nth-child(2) { border-right: 0; }
   .focus-list div:not(:last-child) { border-bottom: 1px solid rgba(251,248,241,.18); }
   .quotes blockquote { font-size: 1.7rem; }
+  .client-film { padding: 70px 0; }
+  .phone-shell { width: min(285px, 76vw); border-radius: 42px; }
+  .phone-screen { border-radius: 35px; }
+  .play-mark { width: 68px; height: 68px; }
   .site-footer { flex-direction: column; gap: 8px; }
 }
