@@ -1,23 +1,34 @@
 # Chelsea Luther Brand
 
 ## Positioning
-Chelsea works at the intersection of communication, leadership, and practical behavior change. The work is divided clearly between organizations and individuals.
+Chelsea works at the intersection of communication, leadership, and practical behavior change.
 
 ## Design principles
-- Editorial, warm, restrained, human
-- Quiet confidence over visual noise
-- Typography first; photography supports the story
-- Generous whitespace and deliberate pacing
-- Layouts must remain strong when photography changes
+- Editorial, warm, modern, understated
+- Quiet confidence
+- Generous whitespace
+- Typography first
+- Photography supports the story; the layout must not depend on one photo set
+- No generic coaching-site aesthetics
 
 ## Voice
-- Thoughtful
-- Direct
-- Grounded
-- Curious
-- Practical
-- Never salesy, preachy, or performative
+Warm, thoughtful, direct, grounded, curious, practical.
 
-## Language rules
-Avoid: negotiation, unlock your potential, transform your life, crush your goals, girl boss.
-Prefer: high-stakes conversations, self-advocacy, clarity, confidence, intention, communication, leadership, practical behavior change.
+## Preferred language
+- High-stakes conversations
+- Self-advocacy
+- Communication
+- Leadership
+- Influence
+- Practical behavior change
+- Clarity, confidence, intention
+
+## Avoid
+- Negotiation
+- Transform your life
+- Unlock your potential
+- Crush your goals
+- Generic motivational language
+
+## Core rule
+Never convince. Invite.
