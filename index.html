@@ -152,6 +152,26 @@
           </div>
         </div>
 
+        <section class="client-film reveal" aria-labelledby="client-film-title">
+          <div class="client-film-copy">
+            <p class="eyebrow">Client stories</p>
+            <h3 id="client-film-title">Real voices.<br>Real change.</h3>
+            <p>A compilation of reflections from people who have experienced the work firsthand.</p>
+          </div>
+
+          <button class="phone-film" type="button" aria-label="Play client stories compilation" data-video-open>
+            <span class="phone-shell" aria-hidden="true">
+              <span class="phone-screen">
+                <img src="assets/client-stories-poster.jpg" alt="" />
+                <span class="phone-overlay"></span>
+                <span class="phone-island"></span>
+                <span class="play-mark"><span></span></span>
+              </span>
+            </span>
+            <span class="film-caption">Hear from past coaching clients <span>↗</span></span>
+          </button>
+        </section>
+
         <aside class="pull-quote reveal">
           <blockquote>“Working with Chelsea is by far the best investment I have ever made for myself and my mental health.”</blockquote>
         </aside>
@@ -206,6 +226,18 @@
       </div>
     </section>
   </main>
+
+
+  <div class="video-modal" data-video-modal aria-hidden="true" role="dialog" aria-modal="true" aria-label="Client stories video">
+    <button class="video-modal-close" type="button" aria-label="Close video" data-video-close>Close <span>×</span></button>
+    <div class="video-modal-inner">
+      <video controls playsinline preload="metadata" poster="assets/client-stories-poster.jpg" data-client-video>
+        <source src="assets/client-stories.mp4" type="video/mp4" />
+        Your browser does not support embedded video.
+      </video>
+      <p class="video-fallback" data-video-fallback hidden>The client compilation will appear here once <strong>assets/client-stories.mp4</strong> is added.</p>
+    </div>
+  </div>
 
   <footer class="site-footer page-width">
     <span>© <span id="year"></span> Chelsea Luther</span>
