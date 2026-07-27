@@ -48,9 +48,8 @@ h3 { margin: 0; font-size: clamp(2.25rem, 4.15vw, 4.2rem); line-height: 1; }
 .opening-image img { height: 100%; object-fit: cover; object-position: center 55%; }
 .image-note { position: absolute; right: 24px; bottom: 18px; max-width: 420px; margin: 0; padding: 8px 11px; color: rgba(255,255,255,.8); background: rgba(24,28,27,.36); font-size: .67rem; letter-spacing: .04em; backdrop-filter: blur(7px); }
 
-.signature { min-height: 92svh; display: flex; flex-direction: column; justify-content: center; padding: 150px 0; border-bottom: 1px solid var(--line); }
-.signature h2 { max-width: 1100px; font-size: clamp(4.2rem, 8.6vw, 9rem); line-height: .87; }
-.signature em { font-weight: 400; }
+.signature { min-height: 78svh; display: flex; flex-direction: column; justify-content: center; padding: 150px 0; border-bottom: 1px solid var(--line); }
+.signature h2 { max-width: 1240px; font-size: clamp(3.2rem, 6.2vw, 6.8rem); line-height: .98; }
 
 .help { padding: 165px 0; }
 .section-intro { display: grid; grid-template-columns: .38fr 1.62fr; gap: 65px; margin-bottom: 90px; }
@@ -194,7 +193,7 @@ body.modal-open { overflow: hidden; }
 @media (max-width: 560px) {
   h1 { font-size: clamp(3.3rem, 15vw, 4.5rem); }
   h2 { font-size: clamp(2.8rem, 13vw, 4.1rem); }
-  .signature h2 { font-size: clamp(3.8rem, 18vw, 5.5rem); }
+  .signature h2 { font-size: clamp(3rem, 13.5vw, 4.5rem); }
   .opening-image { height: 64svh; }
   .image-note { display: none; }
   .focus-list { grid-template-columns: 1fr; }
