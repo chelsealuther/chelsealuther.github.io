@@ -51,15 +51,20 @@ h3 { margin: 0; font-size: clamp(2.25rem, 4.15vw, 4.2rem); line-height: 1; }
 .signature { min-height: 78svh; display: flex; flex-direction: column; justify-content: center; padding: 150px 0; border-bottom: 1px solid var(--line); }
 .signature h2 { max-width: 1240px; font-size: clamp(3.2rem, 6.2vw, 6.8rem); line-height: .98; }
 
-.help { padding: 165px 0; }
-.section-intro { display: grid; grid-template-columns: .38fr 1.62fr; gap: 65px; margin-bottom: 90px; }
+.bridge { padding: 110px 0 35px; }
+.bridge p { max-width: 1040px; margin: 0; font-family: var(--serif); font-size: clamp(1.9rem, 3.2vw, 3.4rem); line-height: 1.12; }
+
+.help { padding: 85px 0 165px; }
+.section-intro { display: grid; grid-template-columns: .38fr 1.62fr; gap: 65px; margin-bottom: 70px; }
 .section-intro h2 { max-width: 970px; }
 .paths { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .path { position: relative; min-height: 540px; display: flex; flex-direction: column; justify-content: space-between; padding: 48px 56px 50px 0; text-decoration: none; }
 .path + .path { padding-left: 56px; border-left: 1px solid var(--line); }
 .path-number { display: block; margin-bottom: 80px; color: var(--muted); font-size: .78rem; }
 .path h3 { font-size: clamp(2.8rem, 5.4vw, 5.2rem); }
-.path > p { max-width: 470px; margin: 0; color: var(--muted); font-size: 1.04rem; }
+.path-details { max-width: 490px; }
+.path-copy { margin: 0; color: var(--muted); font-size: 1.04rem; }
+.offerings { margin: 22px 0 0; font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; }
 .arrow { position: absolute; right: 24px; bottom: 32px; font-size: 2.35rem; transition: transform .24s ease; }
 .path:hover .arrow { transform: translate(8px, 8px); }
 
