@@ -20,3 +20,6 @@ The Life Coaching section is ready for your compilation video. Add your final vi
 The current `client-stories-poster.jpg` is a temporary poster image. Replace it with a vertical still from the compilation whenever you are ready. The recommended poster ratio is approximately 9:19.
 
 Version 5.2 corrected: preserves the client testimonial phone/video section from 5.1 and updates only the hero copy.
+
+
+Version 6.2: replaces the My Approach section with Chelsea's five coaching pillars and retains the two-column About Chelsea layout.
