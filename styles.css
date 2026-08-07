@@ -109,6 +109,16 @@ body.modal-open { overflow: hidden; }
 .belief span { display: block; margin-bottom: 70px; color: var(--muted); font-size: .75rem; }
 .belief h3 { max-width: 500px; font-size: clamp(2rem, 3.1vw, 3.25rem); }
 
+
+.pillars-section { padding: 165px 0; border-bottom: 1px solid var(--line); }
+.pillars-heading { display: grid; grid-template-columns: .38fr 1.62fr; gap: 65px; margin-bottom: 78px; }
+.pillars-heading h2 { max-width: 980px; }
+.pillar-list { border-top: 1px solid var(--line); }
+.pillar { display: grid; grid-template-columns: 72px .9fr 1.1fr; gap: 40px; align-items: start; padding: 44px 0 48px; border-bottom: 1px solid var(--line); }
+.pillar-number { padding-top: 8px; color: var(--muted); font-size: .76rem; letter-spacing: .08em; }
+.pillar h3 { font-size: clamp(2rem, 3.4vw, 3.55rem); line-height: 1.02; }
+.pillar p { max-width: 610px; margin: 5px 0 0; color: var(--muted); font-size: 1.04rem; }
+
 .about-section { padding: 165px 0; }
 .about-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 120px; align-items: center; }
 .about-copy h2 { margin-bottom: 42px; font-size: clamp(3.1rem, 5.4vw, 5.7rem); }
@@ -128,16 +138,6 @@ body.modal-open { overflow: hidden; }
 .reveal.visible { opacity: 1; transform: translateY(0); }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .reveal { opacity: 1; transform: none; transition: none; } }
 
-
-
-.pillars { padding: 165px 0; border-bottom: 1px solid var(--line); }
-.pillars-heading { display: grid; grid-template-columns: .38fr 1.62fr; gap: 65px; margin-bottom: 78px; }
-.pillars-heading h2 { max-width: 980px; }
-.pillar-list { border-top: 1px solid var(--line); }
-.pillar { display: grid; grid-template-columns: 72px .9fr 1.1fr; gap: 40px; align-items: start; padding: 44px 0 48px; border-bottom: 1px solid var(--line); }
-.pillar-number { padding-top: 8px; color: var(--muted); font-size: .76rem; letter-spacing: .08em; }
-.pillar h3 { font-size: clamp(2rem, 3.4vw, 3.55rem); line-height: 1.02; }
-.pillar p { max-width: 610px; margin: 5px 0 0; color: var(--muted); font-size: 1.04rem; }
 @media (max-width: 900px) {
   .page-width, .site-header { width: min(calc(100% - 36px), var(--max)); }
   .site-header { mix-blend-mode: normal; padding: 18px 0; background: rgba(242,239,232,.92); backdrop-filter: blur(12px); }
@@ -152,6 +152,9 @@ body.modal-open { overflow: hidden; }
   .hero-bottom .text-link { margin-top: 38px; }
   .opening-image { height: 72svh; }
   .section-intro, .coaching-grid, .client-film, .testimonial-heading, .approach, .about-grid, .contact-bottom { grid-template-columns: 1fr; gap: 48px; }
+  .pillars-heading { grid-template-columns: 1fr; gap: 28px; margin-bottom: 55px; }
+  .pillar { grid-template-columns: 46px 1fr; gap: 24px; }
+  .pillar p { grid-column: 2; margin-top: 0; }
   .coaching-section, .stories-section, .approach, .about-section { padding-top: 110px; padding-bottom: 110px; }
   .coaching-grid .editorial-image { order: -1; }
   .client-film { padding-bottom: 85px; }
@@ -171,12 +174,12 @@ body.modal-open { overflow: hidden; }
   .signature h2 { font-size: clamp(3rem, 13.5vw, 4.5rem); }
   .opening-image { height: 64svh; }
   .quotes blockquote { font-size: 1.7rem; }
-  .pillar { grid-template-columns: 34px 1fr; gap: 18px; padding: 34px 0 38px; }
-  .pillar h3 { font-size: 2rem; }
-  .pillar p { font-size: .98rem; }
   .phone-shell { width: min(285px, 76vw); border-radius: 42px; }
   .phone-screen { border-radius: 35px; }
   .play-mark { width: 68px; height: 68px; }
   .belief { min-height: 220px; }
+  .pillar { grid-template-columns: 34px 1fr; gap: 18px; padding: 34px 0 38px; }
+  .pillar h3 { font-size: 2rem; }
+  .pillar p { font-size: .98rem; }
   .site-footer { flex-direction: column; gap: 8px; }
 }
