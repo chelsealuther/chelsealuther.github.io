@@ -1,16 +1,3 @@
-# chelsealuther.github.io — Version 6
+# Chelsea Luther website
 
-Upload the contents of this folder to the root of the GitHub Pages repository.
-
-Required files:
-- index.html
-- styles.css
-- script.js
-- assets/
-
-## Client testimonial compilation
-Place the final vertical compilation video in the assets folder using this exact filename:
-
-`client-stories.mp4`
-
-The current `client-stories-poster.jpg` is used as the poster image.
+Version 7 personal brand site for GitHub Pages. Upload all contents of this folder to the repository root.
